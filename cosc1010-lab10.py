@@ -1,9 +1,9 @@
-# Your Name Here
+# Jaxson Viergets
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section: 
-# Sources, people worked with, help given to: 
+# 11/22/2024
+# Lab 10
+# Lab Section:10 
+# Sources, people worked with, help given to: Lee huber
 # your
 # comments
 # here
@@ -17,7 +17,14 @@ def get_hash(to_hash):
     """You can use """
     return sha256(to_hash.encode('utf-8')).hexdigest().upper()
 
-
+try:
+    for password in passwords:
+        temp_hash = get_hash(password)
+        if temp_hash == hash:
+            print(f'youy pass key is:{password}')
+            break
+except(NameError):
+    print('I cant read this yo. Ima need you to try again')
 
 # Files and Exceptions
 
